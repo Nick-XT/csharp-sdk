@@ -31,6 +31,7 @@ namespace AGiXTSDK
         private string HandleError(Exception e)
         {
             Console.WriteLine($"Error: {e}");
+            Console.WriteLine($"Stack Trace: {e.StackTrace}");
             return "Unable to retrieve data.";
         }
 
